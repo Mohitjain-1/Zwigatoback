@@ -19,6 +19,8 @@ app.get('/',(req,res)=>{res.send('App is running');});
 app.use(express.json())
 app.use('/create',require("./Routes/CreateUser"));
 app.use('/create',require("./Routes/DisplayData"));
+app.use('/create',require("./Routes/login"));
+app.use('/create',require("./Routes/myorder"));
 app.use('/create',require("./Routes/OrderData"));
 
 app.listen(port,()=>{
